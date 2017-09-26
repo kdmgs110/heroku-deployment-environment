@@ -5,3 +5,7 @@ beautifulsoup4==4.4.0
 requests_oauthlib>=0.7.0
 six>=1.10.0
 PySocks>=1.5.7
+
+future==0.15.2
+oauthlib==1.1.2
+python-twitter==3.1
