@@ -26,7 +26,7 @@ KEYWORD = "%E5%87%B0%E3%81%8B%E3%81%AA%E3%82%81"
  
 #DMMのAPIを取得し、XMLをBeautifulsoupで取得
 html = urllib.request.urlopen("https://api.dmm.com/affiliate/v3/ItemList?api_id=" + APPID + "&affiliate_id=" + AFFILIATEID + "%20&site=DMM.R18&service=digital&floor=videoa&hits=5&sort=date&keyword=" + KEYWORD + "&output=xml")
-soup = BeautifulSoup(html,"lxml")
+soup = BeautifulSoup(html, "html.parser")
  
 #取得したXMLを整理して表示する
  
